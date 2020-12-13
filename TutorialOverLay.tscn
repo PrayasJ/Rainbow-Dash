@@ -1,0 +1,333 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://TutorialOverLay.gd" type="Script" id=1]
+[ext_resource path="res://dodge_assets/fonts/8-BIT WONDER.TTF" type="DynamicFontData" id=2]
+[ext_resource path="res://dodge_assets/fonts/Fipps-Regular.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://dodge_assets/art/ui5.png" type="Texture" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 13
+outline_size = 1
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 13
+outline_size = 1
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 20
+extra_spacing_top = 20
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 20
+font_data = ExtResource( 2 )
+
+[node name="TutorialOverLay" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="Intro1" type="Sprite" parent="."]
+visible = false
+position = Vector2( 240, 330 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="Intro1"]
+margin_left = -88.7723
+margin_top = -76.4058
+margin_right = 85.2277
+margin_bottom = 92.5942
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+text = "Welcome to 
+The World
+ of Balls 
+and Walls. Hah."
+align = 1
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Intro2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 240, 330 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="Intro2"]
+margin_left = -137.375
+margin_top = -85.7219
+margin_right = 130.625
+margin_bottom = 91.2781
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+text = "To reach
+your destination
+sonic fast You
+ need to
+avoid obstacles"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Intro3" type="Sprite" parent="."]
+visible = false
+position = Vector2( 240, 330 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="Intro3"]
+margin_left = -77.2632
+margin_top = -51.1579
+margin_right = 77.7368
+margin_bottom = 53.8421
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "To avoid You
+need to Jump
+over the Walls"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Intro4" type="Sprite" parent="."]
+visible = false
+position = Vector2( 240, 330 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="Intro4"]
+margin_left = -101.058
+margin_top = -45.8102
+margin_right = 96.9416
+margin_bottom = 59.1898
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Also you can move
+the ball left and
+right"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Intro5" type="Sprite" parent="."]
+visible = false
+position = Vector2( 240, 330 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="Intro5"]
+margin_left = -103.684
+margin_top = -44.5263
+margin_right = 103.316
+margin_bottom = 78.4737
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "The longer You
+press the higher
+the ball bounces"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Intro6" type="Sprite" parent="."]
+visible = false
+position = Vector2( 240, 330 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="Intro6"]
+margin_left = -87.4737
+margin_top = -29.8947
+margin_right = 88.5263
+margin_bottom = 24.1053
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Best of Luck
+Kind 
+Straaanger"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hit1" type="Sprite" parent="."]
+visible = false
+position = Vector2( 240, 330 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="hit1"]
+margin_left = -88.8948
+margin_top = -87.4737
+margin_right = 92.1052
+margin_bottom = 89.5263
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "Uh Oh ...!
+]Seems Like You
+Hit a WALLLLLLLL.
+( It sure was a
+long wall... )"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hit2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 240, 330 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="hit2"]
+margin_left = -97.2558
+margin_top = -48.0567
+margin_right = 92.7442
+margin_bottom = 56.9433
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "Each Wall has
+Different Heights
+Their"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hit3" type="Sprite" parent="."]
+visible = false
+position = Vector2( 240, 330 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="hit3"]
+margin_left = -119.433
+margin_top = -46.8833
+margin_right = 123.567
+margin_bottom = 58.1167
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "Their Height can
+be identified by
+their colour."
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="end1" type="Sprite" parent="."]
+visible = false
+position = Vector2( 240, 330 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="end1"]
+margin_left = -79.5476
+margin_top = -51.6403
+margin_right = 79.4524
+margin_bottom = 53.3597
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 1, 1 )
+text = "Congrats on
+completing the
+tutorial mate."
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="end2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 240, 330 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="end2"]
+margin_left = -81.6595
+margin_top = -87.7082
+margin_right = 85.3405
+margin_bottom = 89.2918
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 1, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "If you like the
+game buy me
+a coffee maybe
+( jk unless
+idk haha? )"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="end3" type="Sprite" parent="."]
+visible = false
+position = Vector2( 240, 330 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="TextEdit" type="TextEdit" parent="end3"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -198.5
+margin_top = -106.0
+margin_right = -12.5
+margin_bottom = -60.0
+custom_fonts/font = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="end3"]
+margin_left = -66.7651
+margin_top = -83.9853
+margin_right = 61.2349
+margin_bottom = -14.9853
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Enter your 
+Username - "
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="submit" type="Button" parent="end3"]
+margin_left = -69.9087
+margin_top = 39.0734
+margin_right = 62.0913
+margin_bottom = 69.0734
+focus_mode = 0
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 1, 0, 1 )
+enabled_focus_mode = 0
+text = "Submit"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="text_changed" from="end3/TextEdit" to="." method="_on_TextEdit_text_changed"]
+[connection signal="pressed" from="end3/submit" to="." method="_on_submit_pressed"]

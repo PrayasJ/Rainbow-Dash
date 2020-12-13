@@ -1,0 +1,52 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://dodge_assets/art/ball_still_2.png" type="Texture" id=1]
+[ext_resource path="res://dodge_assets/art/light.png" type="Texture" id=2]
+[ext_resource path="res://dodge_assets/art/ball_still_1.png" type="Texture" id=3]
+[ext_resource path="res://Player.gd" type="Script" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "still",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 20.5596
+
+[node name="Player" type="Area2D"]
+script = ExtResource( 5 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.05, 0.05 )
+frames = SubResource( 1 )
+animation = "still"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+
+[node name="baseLight" type="Light2D" parent="."]
+position = Vector2( 0.407814, 0.203911 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 2 )
+shadow_enabled = true
+shadow_gradient_length = 5.0
+shadow_filter = 5
+shadow_filter_smooth = 10.0
+
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( 0.407814, 0.203911 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 2 )
+shadow_enabled = true
+shadow_gradient_length = 5.0
+shadow_filter = 5
+shadow_filter_smooth = 10.0
+
+[node name="JumpTimer" type="Timer" parent="."]
+wait_time = 0.001
+one_shot = true
+[connection signal="body_entered" from="." to="." method="_on_Player_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_Player_body_exited"]

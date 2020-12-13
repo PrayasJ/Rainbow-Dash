@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/bgm1.wav-1349b9de7d37b9c27e2007ac9cde0fa8.sample"
+
+[deps]
+
+source_file="res://dodge_assets/music/bgm1.wav"
+dest_files=[ "res://.import/bgm1.wav-1349b9de7d37b9c27e2007ac9cde0fa8.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=1
